@@ -1,0 +1,40 @@
+{
+  "name": "wdio-starter-kit",
+  "version": "0.0.1",
+  "description": "Boilerplate repo for quick set up of WebdriverIO test scripts with TravisCI, Sauce Labs and Visual Regression Testing",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "wdio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klamping/wdio-starter-kit.git"
+  },
+  "keywords": [
+    "WebdriverIO"
+  ],
+  "author": "Kevin Lamping",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klamping/wdio-starter-kit/issues"
+  },
+  "homepage": "https://github.com/klamping/wdio-starter-kit#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-webdriverio": "^0.4.1",
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-notifier": "^5.1.2",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-sauce-service": "^0.4.0",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.0",
+    "wdio-visual-regression-service": "^0.8.0",
+    "webdriverio": "^4.8.0"
+  }
+}

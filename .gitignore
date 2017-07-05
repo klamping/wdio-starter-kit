@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+
+# WebdriverIO Specific Files
+errorShots/
+screenshots/latest/
+screenshots/diff/
