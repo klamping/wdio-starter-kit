@@ -20,6 +20,7 @@ You can also lint your code with `npm run lint`.
 
 ## This kit features:
 
+- [Login & Registration Tests, with Page Objects](#starter-test-cases)
 - [Mocha](http://mochajs.org/)
 - [Chai with `expect` global](http://chaijs.com/guide/styles/#expect)
 - [Chai WebdriverIO](https://github.com/marcodejongh/chai-webdriverio)
@@ -31,7 +32,15 @@ You can also lint your code with `npm run lint`.
 
 ## More Details
 
-## Folder Structure
+### Starter Test Cases
+
+Because login and registration pages are ubiquitous on websites, I've included two test files with corresponding page objects.
+
+You'll very likely need to replace the selectors used in the page objects.
+
+You'll also want to update the `isLoggedIn` and `isRegistered` functions in the page objects to return the proper response.
+
+### Folder Structure
 
 Tests and page objects go in the `test\` folder, which you'll need to create.
 
