@@ -5,11 +5,12 @@
 
 Boilerplate repo for quick set up of WebdriverIO test scripts with TravisCI, Sauce Labs and Visual Regression Testing
 
-## Installation
+## Configuration
 
-Clone the repo and run `npm install`
-
-You'll also need to add a valid `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` to your environment variables to enable that integration.
+1. Clone the repo and run `npm install`
+2. Add a valid `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` to your environment variables to enable that integration.
+3. Update the 'baseUrl' property in `wdio.conf.js` and `wdio.conf.local.js`
+4. Create a 'test' folder and place your tests in it
 
 ## Usage
 
@@ -26,8 +27,19 @@ You can also lint your code with `npm run lint`.
 - [Visual Regression Tests](https://github.com/zinserjan/wdio-visual-regression-service)
 - [Local notifications](http://blog.kevinlamping.com/continuous-local-webdriverio-testing-with-onchange-and-node-notifier-watching/)
 - [ESLint](http://eslint.org/) using [Semistandard style](https://github.com/Flet/semistandard)
+- [WebdriverIO tuned Gitignore file](https://github.com/klamping/wdio-starter-kit/blob/master/.gitignore#L61)
 
 ## More Details
+
+## Folder Structure
+
+Tests and page objects go in the `test\` folder, which you'll need to create.
+
+Name tests with a `.spec.js` extension. For example: `mytest.spec.js`
+
+Name Page Object files with a `.page.js` extention.  For example: `mypageobject.page.js`
+
+Visual regression screenshots will be saved to the `screenshots` folder.
 
 ### TravisCI Integration
 
