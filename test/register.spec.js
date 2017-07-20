@@ -1,4 +1,4 @@
-const Register = require('./register.page.js');
+const Register = require('./Register.page.js');
 
 const register = new Register();
 
@@ -51,7 +51,7 @@ describe('Registration Page', function () {
   });
 
   it('should error on mismatched password', function () {
-    register.register(validEmail, validPass, 'bbbbb');
+    register.register(validEmail, validPass, validPass + 'b');
 
     expect(register.isRegistered()).to.be.false;
 

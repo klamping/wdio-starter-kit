@@ -1,4 +1,4 @@
-const Login = require('./login.page.js');
+const Login = require('./Login.page.js');
 
 const login = new Login();
 

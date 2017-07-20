@@ -8,7 +8,7 @@ Boilerplate repo for quick set up of WebdriverIO test scripts with TravisCI, Sau
 ## Configuration
 
 1. Clone the repo and run `npm install`
-2. Add a valid `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` to your environment variables to enable that integration.
+2. Add a valid `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` to your environment variables to enable that integration. ([Settting up Sauce](http://webdriver.io/guide/usage/cloudservices.html#Sauce-Labs))
 3. Update the 'baseUrl' property in `wdio.conf.js` and `wdio.conf.local.js`
 4. Create a 'test' folder and place your tests in it
 
