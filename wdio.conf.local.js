@@ -12,6 +12,7 @@ var localConfig = Object.assign(prodConfig, {
   }],
 
   services: ['selenium-standalone'],
+  reporters: ['spec'],
 
   // Hooks to notify Growl-like programs
   onPrepare: function (config, capabilities) {

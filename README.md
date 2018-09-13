@@ -66,4 +66,20 @@ By default, tests will run in Sauce Labs testing your production server.
 
 To run the tests entirely locally, run:
 
-`npm test -- wdio.conf.local.js`
+`npm test wdio.conf.local.js`
+
+## Configurations
+
+[WebdriverIO configurations](http://webdriver.io/guide/testrunner/gettingstarted.html) can be passed in via a double-dash (i.e. `--`).
+
+For example, to run a single test file, use the WDIO `spec` flag: `npm test -- --spec=login`
+
+The double dash indicates that the remaining options should be sent to the command that NPM is running, not NPM itself.
+
+In the previous example everything after `--` goes to WDIO.
+
+A few more examples:
+
+To change the log level, pass in a `--logLevel` flag: `npm test -- --logLevel=verbose`
+
+To specify a certain web server, pass in a `baseUrl` flag: `npm test -- --baseUrl=http://url.of.server`

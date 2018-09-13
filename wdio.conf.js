@@ -143,7 +143,7 @@ exports.config = {
       screenshotName: getScreenshotName.bind(null, 'latest'),
       diffName: getScreenshotName.bind(null, 'diff')
     }),
-    viewports: [{width: 300, height: 500}, {width: 800, height: 700}]
+    viewports: [{ width: 300, height: 500 }, { width: 800, height: 700 }]
   },
   //
   // Framework you want to run your specs with.
@@ -157,7 +157,7 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: http://webdriver.io/guide/testrunner/reporters.html
-  reporters: ['spec'],
+  reporters: ['spec', 'allure'],
 
   //
   // Options to be passed to Mocha.

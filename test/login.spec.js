@@ -3,12 +3,11 @@ const Login = require('./Login.page.js');
 const login = new Login();
 
 describe('Login Page', function () {
-
   // Replace with valid email address & password
   const validEmail = 'valid@email.com';
   const validPass = 'asdasd';
 
-  beforeEach(function() {
+  beforeEach(function () {
     // Replace URL with correct login page
     browser.url('./');
   });
@@ -19,7 +18,7 @@ describe('Login Page', function () {
     results.forEach(function (result) {
       expect(result.isWithinMisMatchTolerance).to.equal(true, 'screenshot failure');
     });
-  })
+  });
 
   it('should let you login with valid credentials', function () {
     login.login(validEmail, validPass);
@@ -62,4 +61,4 @@ describe('Login Page', function () {
 
     expect(browser.getUrl()).to.contain('register.html');
   });
-})
+});

@@ -3,12 +3,11 @@ const Register = require('./Register.page.js');
 const register = new Register();
 
 describe('Registration Page', function () {
-
   // Replace with valid email address & password
   const validEmail = 'valid@email.com';
   const validPass = 'asdasd';
 
-  beforeEach(function() {
+  beforeEach(function () {
     browser.url('./REPLACEME');
   });
 
@@ -21,7 +20,7 @@ describe('Registration Page', function () {
   });
 
   it('should let your register with proper credentials', function () {
-    register.register(validEmail, validPass)
+    register.register(validEmail, validPass);
 
     expect(register.isRegistered()).to.be.true;
 
@@ -78,5 +77,5 @@ describe('Registration Page', function () {
     register.accountLoginLink.click();
 
     expect(browser.getUrl()).to.contain('index.html');
-  })
+  });
 });

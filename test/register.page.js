@@ -7,7 +7,7 @@ class Register {
   get accountLoginLink () { return $('*=Already have an account?'); }
 
   register (email, password, confirmPassword) {
-    confirmPassword = typeof confirmPassword == 'string' ? confirmPassword : password;
+    confirmPassword = typeof confirmPassword === 'string' ? confirmPassword : password;
 
     this.email.setValue(email);
     this.password.setValue(password);
